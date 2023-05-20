@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portafolio</title>
+    <link rel="stylesheet" href="../estilos/portafolio.css">
+    <script src="../escripts/portafolio.js"></script>
+</head>
+<body>
+    <header>
+        <a href="../index.html" class="brand">
+            <img src="../imagenes/GIAN-02.png" width="100px" height="100px">
+        </a>
+        <nav class="menu">
+          <div class="btn">
+            <i class="fas fa-times close-btn"></i>
+          </div>
+          <ul>
+              <li><a href="../index.html">TVS</a></li>
+              <li><a href="servicios.html">Servicios</a></li>
+              <li><a href="portafolio.html">portafolio</a></li>
+              <li><a href="contacto.html">contacto</a></li>
+          </ul>
+        </nav>
+        <div class="btn">
+          <i class="fas fa-bars menu-btn"></i>
+        </div>
+      </header>
+  
+      <section class="section-main">
+        
+      </section>
+  
+    
+  
+      <script type="text/javascript">
+      //javascript for navigation bar effect on scroll
+      window.addEventListener("scroll", function(){
+        var header = document.querySelector("header");
+        header.classList.toggle('down', window.scrollY > 0);
+  
+          //change logo
+          var logo = document.querySelector(".brand img");
+          if (window.scrollY>0) {
+              logo.setAttribute('src', '../imagenes/GIAN-02.png');
+          }else{
+              logo.setAttribute('src', '../imagenes/GIAN-02.png');
+          }
+  
+      });
+  
+      //javascript for responsive navigation sidebar menu
+      var menu = document.querySelector('.menu');
+      var menuBtn = document.querySelector('.menu-btn');
+      var closeBtn = document.querySelector('.close-btn');
+  
+      menuBtn.addEventListener("click", () => {
+        menu.classList.add('active');
+      });
+  
+      closeBtn.addEventListener("click", () => {
+        menu.classList.remove('active');
+      });
+      </script>
+<main>
+        <div class="zona1"></div>
+        <img src="../imagenes/tv2.jpeg" alt="tv2" class="tv2" width="300px">
+        <h1 class="logou">Nuestro Portafolio</h1>
+        <p class="nosotros">destacamos en diseño web, diseño gráfico y venta de laptops. En diseño web, creamos sitios atractivos y funcionales que se adaptan a las necesidades de nuestros clientes. Nuestro enfoque en diseño gráfico se centra en transmitir mensajes impactantes a través de elementos visuales creativos. Además, ofrecemos una selección de laptops de alta calidad para satisfacer las necesidades tecnológicas de nuestros clientes. Valoramos la satisfacción del cliente y nos esforzamos por superar expectativas en cada proyecto. Explora nuestro portafolio para ver ejemplos de nuestro trabajo y descubre cómo podemos ayudarte a alcanzar tus objetivos digitales y tecnológicos. <br>
+            <i>-TecVerse</i>
+        </p> 
+        <br>
+        <p class="dw"><strong>Desarrollo Web</strong></p>
+<div class="imagen-container">
+  <img src="../imagenes/web.jpg.jpeg" alt="Imagen 1" class="imagen-izquierda">
+  <img src="../imagenes/web3.jpg" alt="Imagen 2" class="imagen-centro" height="260px">
+  <img src="../imagenes/web4.jpg" alt="Imagen 3" class="imagen-derecha" height="260px">
+</div>
+<br><br>    
+<p class="dg"><strong>Diseño Gráfico</strong></p>
+<br>
+<div class="imagen-container">
+  <img src="../imagenes/porta.jpg" alt="imagen 4" class="imagen-izquierda">
+  <img src="../imagenes/porta3.jpg" alt="imagen 5" class="imagen-centro">
+  <img src="../imagenes/porta4.jpg" alt="" class="imagen-derecha" height="80%" width="800px">
+</div>
+</main>
+<footer class="pie-pagina">
+    <div class="grupo-1">
+        <div class="box">
+            <figure>
+                <a href="../index.html">
+                    <img src="../imagenes/GIAN-02.png" alt="Logo de TecVerse">
+                </a>
+            </figure>
+        </div>
+        <div class="box">
+            <h2>Nuestra Oficina</h2>
+            <p>AV. El Zapallal</p>
+            <p>Los Espinos de Carabayllo</p>
+            <p>(Parque los Espinos)</p>
+        </div>
+        <div class="box">
+            <h2>SIGUENOS</h2>
+            <div class="red-social">
+                <a href="https://www.facebook.com/profile.php?id=100092854118270" class="fa fa-facebook" aria-hidden="true"><img src="../imagenes/facebook (2).png" alt="fb" width="50px" height="50px"></a>
+               
+            </div>
+        </div>
+    </div>
+    <div class="grupo-2">
+        <small>© 2023 <b>TecVerse</b> - Todos los Derechos Reservados.</small>
+    </div>
+</footer>   
+</body>
+</html>
